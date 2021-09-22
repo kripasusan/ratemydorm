@@ -1,4 +1,4 @@
-# ratemydorm 🏠🏡🏘
+# ratemydorm 🏠🏡🏘 - Group 8
 A website to leave and read reviews and ratings of college dorms. Built using MEAN stack.
 <h1>RateMyDorm - A Hostel/Dorm Review and Rating Website</h1>
 -Developed using MEAN stack.<br>
