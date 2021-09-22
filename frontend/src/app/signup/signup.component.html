@@ -1,0 +1,76 @@
+<section id="three">
+    <div class="container">
+      <h4 class="fw-bolder text-center text-light p-4">
+          <br>
+        Sign up to leave a review
+      </h4>
+      <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <!-- <h3>Welcome</h3> -->
+                        <!-- <p>Fill in the data below.</p> -->
+                        <form class="requires-validation" (ngSubmit)="signup()" #userlogin="ngForm" novalidate>
+
+                            <div class="col-md-12">
+                               <input class="form-control" type="text" name="name" placeholder="Full Name" [(ngModel)]="model.name" required>
+                               <div class="valid-feedback">Username field is valid!</div>
+                               <div class="invalid-feedback">Username field cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="email" name="email" placeholder="E-mail Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" [(ngModel)]="model.email" required>
+                                 <div class="valid-feedback">Email field is valid!</div>
+                                 <div class="invalid-feedback">Email field cannot be blank!</div>
+                            </div>
+
+                           <div class="col-md-12">
+                                
+                           </div>
+
+
+                           <div class="col-md-12">
+                              <input class="form-control" type="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" [(ngModel)]="model.password" required>
+                               <div class="valid-feedback">Password field is valid!</div>
+                               <div class="invalid-feedback">Password field cannot be blank!</div>
+                           </div>
+
+                           <div class="col-md-12">
+                            <input class="form-control" type="password" name="password" placeholder="Retype Password" (keyup)="check()"  [(ngModel)]="repass"  required>
+                             <div class="valid-feedback">Password field is valid!</div>
+                         </div>
+
+                           <div class="col-md-12 mt-3">
+                           
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox"  id="invalidCheck" [(ngModel)]="re" name="re" required>
+                                <label class="form-check-label">I'm definitely not a robot!</label>
+                                <br><br>
+                                <label style = "color:wheat; text-align: left;">P.S:<br>>Password must be at least 8 characters<br>>Should contain atleast one upper case, lower case and digit.</label>
+                  
+                              </div>
+                        
+      
+                                  <div class="form-button mt-3">
+                                      <button id="submit" type="submit" class="btn btn-primary" [disabled]="userlogin.invalid || checkpass == false " >Sign up</button>
+                                  </div>
+                                  <br>
+                                  <div class="card-footer">
+                                      <div class="d-flex justify-content-center links" style="color:white; text-decoration: none;">
+                                          Already have an account?&nbsp;<a routerLink="/login" style="color:white; text-decoration: none;"> Log in here!</a>
+                                      </div>
+                                  </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<br><br>
+  </section>

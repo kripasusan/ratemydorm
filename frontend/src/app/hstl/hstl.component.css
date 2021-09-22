@@ -1,0 +1,9 @@
+.text-right{
+    float: right;
+  }
+
+/* section id three */
+#three {
+    background: #e9c1c1 !important;
+    padding:100px;
+  }

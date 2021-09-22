@@ -1,0 +1,76 @@
+<section id="three">
+    <div class="container main">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <p class="fw-bolder text-danger mb-0">
+            {{i.name}}
+          </p><br>
+          <p class="text-dark mb-0">{{i.location}}</p>
+          <!-- <p class="text-muted">300 reviews</p> -->
+          <br>
+          <!-- <img src = "./images/map.jpg" width="80%" height="60%"> -->
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="pills mx-4 d-flex justify-content-between">
+            <span class="rounded-pill bg-danger text-light p-2 text-center" (click)="men()"
+              >&nbsp;&nbsp;&nbsp;<i class="bi-gender-male"></i
+              >&nbsp;Men&nbsp;&nbsp;&nbsp;</span
+            >
+            <span class="rounded-pill bg-danger text-light p-2 text-center" (click)="women()"
+              ><i class="bi-gender-female"></i>&nbsp;Women</span
+            >
+          </div>
+          <br>
+          <div class="cards mt-3" >
+              <div class="card text-center m-2" *ngFor="let j of model" (click)="hstls(j.nameofclg,j.nameofhstl)">
+                <div class="row">
+                  <div class="col-2 mt-3">
+                    <i class="bi-house-door-fill fs-3"  style="margin-left: 50px;"></i>
+                  </div>
+                  <div class="col-10">
+                    <p class="fw-bold mb-0" style="margin-top:10px;">{{j.nameofhstl}}</p>
+                    
+                    <p>300 reviews</p>
+                  </div>
+                </div>
+              </div>
+            <!-- <router-outlet></router-outlet> -->
+            
+            <!-- <div class="card text-center m-2" *ngFor="let i of model">
+              <div class="row">
+                <div class="col-2 mt-3">
+                  <i class="bi-house-door-fill fs-3"  style="margin-left: 50px;"></i>
+                </div>
+                <div class="col-10">
+                  <p class="fw-bold mb-0" style="margin-top:10px;">{{i.nameofhstl}}</p>
+                  
+                  <p>300 reviews</p>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="card text-center m-2" *ngIf="! length">
+              <div class="row">
+                <div class="col-2 mt-3">
+                  <i class="bi-house-door-fill fs-3"  style="margin-left: 50px;"></i>
+                </div>
+                <div class="col-10">
+                  <p class="fw-bold mb-0" style="margin-top:10px;" >no dorms available</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="text-right">
+            <button type="button" class="btn btn-light text-light text-center mx-4 bg-danger" (click)="back()">&#x3008;&nbsp;&nbsp;Back</button>
+            </div>
+          </div>
+          
+          
+          
+          
+        </div>
+      </div>
+      <br>
+      <h5 *ngIf=" data.loggedIn()" style="text-align:center;" (click)="addhstl()" >Can't find your dorm? Add it here </h5>
+    </div>
+  </section>

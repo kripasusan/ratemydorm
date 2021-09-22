@@ -1,0 +1,233 @@
+<!-- <section id="three">
+    <div class="container">
+      <h4 class="fw-bolder text-center text-light p-4">
+          <br>
+        Log in to leave a review
+      </h4>
+      <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Welcome</h3> -->
+                        <!-- <p>Fill in the data below.</p> -->
+                        <!-- <form class="requires-validation" #userslogin="ngForm" (ngSubmit)="add()" novalidate> -->
+<!-- 
+                            <div class="col-md-12">
+                               <input class="form-control" type="text" name="name" placeholder="Full Name" required>
+                               <div class="valid-feedback">Username field is valid!</div>
+                               <div class="invalid-feedback">Username field cannot be blank!</div>
+                            </div> -->
+
+                            <!-- <div class="col-md-12">
+                                <input class="form-control" type="text" name="clg" placeholder="clg" [(ngModel)]="clgmodel.name"  required>
+                                 <div class="valid-feedback">Email field is valid!</div>
+                                 <div class="invalid-feedback">Email field cannot be blank!</div>
+                            </div>
+
+                           <div class="col-md-12">
+                                
+                           </div>
+
+                           <div class="col-md-12">
+                            <input class="form-control" type="text" name="location" placeholder="location" [(ngModel)]="clgmodel.location"   required>
+                             <div class="valid-feedback">Email field is valid!</div>
+                             <div class="invalid-feedback">Email field cannot be blank!</div>
+                           </div>
+
+                            <div class="col-md-12">
+                            
+                            </div>
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="pic" placeholder="pic (link)" [(ngModel)]="clgmodel.pic"   required>
+                                 <div class="valid-feedback">Email field is valid!</div>
+                                 <div class="invalid-feedback">Email field cannot be blank!</div>
+                            </div>
+
+                           <div class="col-md-12">
+                                
+                           </div>
+                           <div class="col-md-12">
+                            <input class="form-control" type="text" name="dorm" placeholder="dorm" [(ngModel)]="hstlmodel.nameofhstl"  required>
+                             <div class="valid-feedback">Email field is valid!</div>
+                             <div class="invalid-feedback">Email field cannot be blank!</div>
+                        </div>
+
+                       <div class="col-md-12">
+                            
+                       </div>
+                       <div class="col-md-12">
+                        <input class="form-control" type="text" name="gen" placeholder="gen" [(ngModel)]="reviewmodel.gen" required>
+                         <div class="valid-feedback">Email field is valid!</div>
+                         <div class="invalid-feedback">Email field cannot be blank!</div>
+                    </div>
+
+                   <div class="col-md-12">
+                        
+                   </div>
+                   <div class="col-md-12">
+                    <input class="form-control" type="text" name="review" placeholder="review" [(ngModel)]="reviewmodel.reviews"  required>
+                     <div class="valid-feedback">Email field is valid!</div>
+                     <div class="invalid-feedback">Email field cannot be blank!</div>
+                </div>
+
+               <div class="col-md-12">
+                    
+               </div>
+
+
+                          
+
+                           <div class="col-md-12 mt-3">
+                           
+                            </div> -->
+
+                        <!-- <div class="form-check">
+                          <input class="form-check-input" type="radio" value="m"   id="gen" required>
+                          <label class="form-check-label">men!</label>
+                          <input class="form-check-input" type="radio"  value="w"  id="gen" required>
+                          <label class="form-check-label">women!</label>
+            
+                        </div> -->
+                  
+
+                            <!-- <div class="form-button mt-3">
+                                <button id="submit" type="submit" class="btn btn-primary" [disabled]="userslogin.invalid" >add</button>
+                            </div>
+                            <br>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-center links" style="color:white; text-decoration: none;">
+                                    Don't have an account?&nbsp;<a routerLink="signup" style="color:white; text-decoration: none;"> Sign up</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<br><br>
+  </section> -->
+
+  <section id="three1">
+    <div class="container p-5">
+      <h4 class="fw-bolder text-center text-light p-4">
+        Add a college 
+      </h4>
+      <div
+        class="text-light p-4"
+        style="background-color: #c67c7c; border-radius: 20px"
+      >
+        <form action="" #userslogin="ngForm" (ngSubmit)="add()">
+          <div class="mb-3 row">
+            <label
+              for="inputPassword"
+              class="col-sm-3 col-form-label fw-bold"
+              >Name of the College:  *
+            </label>
+            <div class="col-sm-9">
+              <input name="clg"  [(ngModel)]="clgmodel.name"  
+                type="text"
+                class="form-control rounded-pill"
+                id="inputPassword"
+                style="background-color: #d59f9f" required
+              />
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label
+              for="inputPassword"
+              class="col-sm-3 col-form-label fw-bold"
+              >Location of the College:  *
+            </label>
+            <div class="col-sm-9">
+              <input name="location" [(ngModel)]="clgmodel.location"   
+                type="text"
+                class="form-control rounded-pill"
+                id="inputPassword"
+                style="background-color: #d59f9f" required
+              />
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label
+              for="inputPassword"
+              class="col-sm-3 col-form-label fw-bold"
+              >Picture(URL):
+            </label>
+            <div class="col-sm-9">
+              <input name="pic" [(ngModel)]="clgmodel.pic"
+                type="text"
+                class="form-control rounded-pill"
+                id="inputPassword"
+                style="background-color: #d59f9f" 
+              />
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label
+              for="inputPassword"
+              class="col-sm-3 col-form-label fw-bold"
+              >Name of the Hostel:  *
+            </label>
+            <div class="col-sm-9">
+              <input name="dorm" [(ngModel)]="hstlmodel.nameofhstl"  
+                type="text"
+                class="form-control rounded-pill"
+                id="inputPassword"
+                style="background-color: #d59f9f" required
+              />
+            </div>
+          </div>
+
+          <label
+              for="inputPassword"
+              class="col-sm-3 col-form-label fw-bold"
+              >Gender:  *
+            </label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="m" [(ngModel)]="reviewmodel.gen">
+            <label class="form-check-label" for="inlineRadio1">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="w" [(ngModel)]="reviewmodel.gen">
+            <label class="form-check-label" for="inlineRadio2">Female</label>
+          </div>
+          
+          <div class="mb-3 row">
+            <label
+              for="inputPassword"
+              class="col-sm-3 col-form-label fw-bold"
+              >Add your review:  *</label
+            >
+            
+          </div>
+          <div class="form-floating">
+            
+            <textarea name="review"  [(ngModel)]="reviewmodel.reviews"
+              class="form-control text-light"
+              placeholder="Leave a comment here"
+              id="floatingTextarea2"
+              style="
+                height: 100px;
+                background-color: #d59f9f;
+                border-radius: 20px;
+              "
+              required
+            ></textarea>
+            <!-- <label for="floatingTextarea2" class="fw-bold"
+              >Type in your review here</label
+            > -->
+          </div>
+          <div class="form-button mt-3 text-center ">
+            <button id="submit" type="submit" [disabled]="userslogin.invalid" class="btn btn-outline-light text-center">Add</button>
+            <!-- <button id="submit" type="submit" class="btn btn-primary" [disabled]="userslogin.invalid" >add</button> -->
+        </div>
+        <br>
+        
+        </form>
+      </div>
+    </div>
+  </section>

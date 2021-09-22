@@ -1,0 +1,5 @@
+<app-header *ngIf="! data.adminloggedIn()"></app-header>
+<app-subheader *ngIf="! data.adminloggedIn()"></app-subheader>
+<router-outlet></router-outlet>
+<app-subfooter *ngIf="! data.adminloggedIn()"></app-subfooter>
+<app-footer *ngIf="! data.adminloggedIn()"></app-footer>

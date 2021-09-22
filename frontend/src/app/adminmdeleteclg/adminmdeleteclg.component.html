@@ -1,0 +1,49 @@
+<!-- <table>
+    <tr>
+        <th>clg name</th>
+        <th>clg location</th>
+        <th> </th>
+    </tr>
+    <tr *ngFor="let i of model">
+        <td>{{i.name}}</td><br><br><br><br>
+        <td>{{i.location}}</td><br><br><br><br>
+        <td><button (click)="deleteclg(i._id,i.name)">delete</button></td><br><br><br><br>
+    </tr>
+</table> -->
+
+<section id="three1">
+    <div class="container p-5">
+      <h4 class="fw-bolder text-center text-light p-4">
+        Delete College
+      </h4>
+      <div class="row">
+      <div
+        class="text-light p-4"
+        style="background-color: #c67c7c; border-radius: 20px"
+      >
+      <div class="table-responsive">
+        <table class="scroll table text-light">
+          <thead>
+            <tr>
+              <th scope="col">College Name</th>
+              <th scope="col">College Location</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let i of model">
+              <td>{{i.name}}</td>
+              <td>{{i.location}}</td>
+              <td>
+                    <button id="submit" type="submit"  (click)="deleteclg(i._id,i.name)" class="btn btn-outline-light text-center">Delete</button>                
+                </td>
+              <!-- <td><a class="delete_approve" href="#"> Delete</a>&nbsp;<a class="delete_approve" href="">Approve</a> </td> -->
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+      
+    </div>
+    </div>
+  </section>

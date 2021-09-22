@@ -1,0 +1,52 @@
+<!-- <table>
+    <tr>
+        <th>clg name</th>
+        <th>hstl name</th>
+        <th>review</th>
+    </tr>
+    <tr *ngFor="let i of model">
+        <td>{{i.nameofclg}}</td><br><br><br><br>
+        <td>{{i.nameofhstl}}</td><br><br><br><br>
+        <td>{{i.reviews}}</td><br><br><br><br>
+        <td><button (click)="delete(i._id)">delete</button></td>
+    </tr>
+</table> -->
+
+<section id="three1">
+    <div class="container p-5">
+      <h4 class="fw-bolder text-center text-light p-4">
+        View Reviews
+      </h4>
+      <div class="row">
+      <div
+        class="text-light p-4"
+        style="background-color: #c67c7c; border-radius: 20px"
+      >
+      <div class="table-responsive">
+        <table class="scroll table text-light">
+          <thead>
+            <tr>
+              <th scope="col" class="text-center">College Name</th>
+              <th scope="col" class="text-center">Hostel </th>
+              <th scope="col" class="text-center">Reviews</th>
+              <th class="text-center">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let i of model" style="text-align: justify;">
+              <td>{{i.nameofclg}}</td>
+              <td>{{i.nameofhstl}}</td>
+              <td>{{i.reviews}}</td>
+              <td>
+                    <button id="submit" type="submit"  (click)="delete(i._id)" class="btn btn-outline-light text-center">Delete</button>                
+                </td>
+              <!-- <td><a class="delete_approve" href="#"> Delete</a>&nbsp;<a class="delete_approve" href="">Approve</a> </td> -->
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+      
+    </div>
+    </div>
+  </section>

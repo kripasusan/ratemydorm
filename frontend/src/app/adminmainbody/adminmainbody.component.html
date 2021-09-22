@@ -1,0 +1,83 @@
+<!-- <div>
+    <div id="div1" >
+        <br>&nbsp;&nbsp;&nbsp;
+        <a routerLink="addclg">add clg</a>&nbsp;&nbsp;&nbsp;
+        <a routerLink="deleteclg">delete clg</a>&nbsp;&nbsp;&nbsp;
+        <!-- <a routerLink="addhstl">add hstl</a>&nbsp;&nbsp;&nbsp; -->
+        <!-- <a routerLink="deletehstl">delete hstl</a>&nbsp;&nbsp;&nbsp;
+        <a routerLink="viewreview">view reviews</a>&nbsp;&nbsp;&nbsp;
+        <!-- <a href="#" (click)="logout()">logout</a>&nbsp;&nbsp;&nbsp; -->
+        <!-- <a routerLink="recentreview">recent review</a>&nbsp;&nbsp;&nbsp;<br><br>
+    </div>
+    <div >
+        <router-outlet></router-outlet>
+    </div>
+</div> --> 
+
+<section id="two">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 col-md-6 content">
+          <p>
+            As an admin, you can add and delete colleges and dorms, and
+            oversee reviews.
+          </p>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div
+                class="rounded-pill text-center m-3"
+                style="background-color: #f58d967a"
+              >
+              <a routerLink="addclg" (click)="scroll()">
+                Add College
+            </a>
+              </div>
+              <div
+                class="rounded-pill text-center m-3"
+                style="background-color: #f58d967a"
+              >
+              <a routerLink="deleteclg" (click)="scroll()">
+                Delete College
+              </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div
+                class="rounded-pill text-center m-3"
+                style="background-color: #f58d967a"
+              ><a routerLink="deletehstl" (click)="scroll()">
+                Delete Hostel
+                </a>
+              </div>
+              <div
+                class="rounded-pill text-center m-3"
+                style="background-color: #f58d967a"
+              >
+              <a routerLink="viewreview" (click)="scroll()">
+                View Reviews
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-8 mx-auto">
+              <div
+                class="rounded-pill text-center m-3"
+                style="background-color: #f58d967a"
+              >
+              <a routerLink="recentreview" (click)="scroll()">
+                View Recent Reviews
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 py-4">
+          <!-- insert image here -->
+          
+          <p><img class='col-11' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6YXn43PpOKgQobaGKjP1wOiSWKyGuwL0MPQ&usqp=CAU"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id='admin'>
+    <router-outlet></router-outlet>
+</div>

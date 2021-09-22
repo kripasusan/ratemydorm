@@ -1,0 +1,135 @@
+html {
+
+  scroll-behavior: smooth;
+
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+  }
+  
+  /* home section */
+  #home {
+    width: 100%;
+    padding: 0 7%;
+    display: table;
+    margin: 0;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background: linear-gradient(#aa656580, #aa65656e), url(/frontend/ratemydorm/src/app/images/pic.png);
+    background-size: cover;
+  }
+  
+  .icon-search {
+    position: relative;
+    top: 15px;
+    right: 35px;
+  }
+  
+  .form {
+    margin-top: 20%;
+    margin-bottom: 27%;
+  }
+  
+  .main-input {
+    height: 50px;
+    border-radius: 0;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.363);
+  }
+  
+  /* section id two */
+  .content {
+    margin-top: 10%;
+  }
+  
+  /* section id three */
+  #three {
+    background: #bc6464;
+  }
+  
+  .college-img {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  }
+  
+  /* section id four */
+  hr {
+    opacity: 1;
+  }
+  
+  td {
+    border-style: none;
+  }
+  
+  /* footer */
+  footer {
+    background: #ded0d0;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* home section */
+  #home {
+    width: 100%;
+    padding: 0 7%;
+    display: table;
+    margin: 0;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(#aa656580, #aa65656e), url(./images/pic.png); */
+    background: linear-gradient(#aa656580, #1110106e),url(https://i0.wp.com/tcnjsignal.net/media/2020/03/graduation-P3PPKXV-1-scaled.jpg);
+    background-size: cover;
+  }
+  
+  .icon-search {
+    position: relative;
+    top: 15px; 
+    right: 35px;
+  }
+  
+  .form {
+    margin-top: 20%;
+    margin-bottom: 27%;
+  }
+  
+  .main-input {
+    height: 50px;
+    border-radius: 0;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.363);
+  }
+  
+  /* section id two */
+  .content {
+    margin-top: 10%;
+  }
+  
+  /* section id three */
+  #three {
+    background: #bc6464;
+    
+  }
+  
+  #three1{
+    background: #bc6464;
+    /* background: #817a7a; */
+  }
+  
+  .college-img {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  }
+  
+  /* section id four */
+  hr {
+    opacity: 1;
+  }
+  
+  td {
+    border-style: none;
+  }
+  
+  /* footer */
+  footer {
+    background: #ded0d0;
+  }

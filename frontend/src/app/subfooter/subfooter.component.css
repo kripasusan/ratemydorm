@@ -1,0 +1,14 @@
+/* section id four */
+hr {
+    opacity: 1;
+    font-size: 15px;
+  }
+  
+  td {
+    border-style: none !important;
+    font-size: 15px;
+  }
+
+  table{
+    border-style: none;
+  }

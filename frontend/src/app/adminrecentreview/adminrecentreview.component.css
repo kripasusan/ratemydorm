@@ -1,0 +1,27 @@
+tr{
+    overflow-x: scroll;
+  } 
+      
+  table.scroll tbody td,
+  table.scroll thead th {
+    border-right: 1px solid rgb(255, 255, 255);
+  }
+  
+  tbody td:last-child,
+  thead th:last-child {
+    border-right: none !important;
+  }
+
+  tbody, td, tfoot, th, thead, tr {
+    border-style: none;
+  }
+
+  .delete__approve{
+    text-decoration: none;
+    color: white;
+    background-color: #DEB8B8; border-radius: 20px;
+    padding: 5px;
+  }
+  .delete__approve:hover{
+    color: white;
+  }
